@@ -19,8 +19,9 @@ import { JoinValidationSchema } from './config/joi.schema.validation';
       rootPath: join(__dirname, '..', 'public'),
     }),
     MongooseModule.forRoot(process.env.MONGODB),
-    PokemonModule,
     CommonModule,
+    PokemonModule,
+
     SeedModule,
   ],
 })

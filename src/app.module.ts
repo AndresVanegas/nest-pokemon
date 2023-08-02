@@ -21,8 +21,9 @@ import { JoinValidationSchema } from './config/joi.schema.validation';
     MongooseModule.forRoot(
       'mongodb+srv://pokemondb_user:a150vUlkD6Y8K9Gm@pokemoncluster.ckw8y6x.mongodb.net/nest-pokemon',
     ),
-    PokemonModule,
     CommonModule,
+    PokemonModule,
+
     SeedModule,
   ],
 })

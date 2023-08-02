@@ -18,9 +18,7 @@ import { JoinValidationSchema } from './config/joi.schema.validation';
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
-    MongooseModule.forRoot(
-      'mongodb+srv://pokemondb_user:a150vUlkD6Y8K9Gm@pokemoncluster.ckw8y6x.mongodb.net/nest-pokemon',
-    ),
+    MongooseModule.forRoot(process.env.MONGODB),
     CommonModule,
     PokemonModule,
 

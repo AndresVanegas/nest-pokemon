@@ -29,9 +29,9 @@ exports.AppModule = AppModule = __decorate([
             serve_static_1.ServeStaticModule.forRoot({
                 rootPath: (0, path_1.join)(__dirname, '..', 'public'),
             }),
-            mongoose_1.MongooseModule.forRoot('mongodb+srv://pokemondb_user:a150vUlkD6Y8K9Gm@pokemoncluster.ckw8y6x.mongodb.net/nest-pokemon'),
-            pokemon_module_1.PokemonModule,
+            mongoose_1.MongooseModule.forRoot(process.env.MONGODB),
             common_module_1.CommonModule,
+            pokemon_module_1.PokemonModule,
             seed_module_1.SeedModule,
         ],
     })
